@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Compteur de titres et info site",
+  "version": "1.2",
+  "description": "Cette extension ajoute un numéro devant chaque résultat de recherche Google et affiche des informations sur le site.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
